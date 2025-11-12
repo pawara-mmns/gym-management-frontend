@@ -6,11 +6,10 @@ function SignUpPage() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   return (
-    <div className="min-h-screen flex">
+    <div className="h-screen flex overflow-hidden">
       {/* Left Side - Image and Text */}
-      <div className="hidden lg:flex lg:w-1/2 relative bg-cover bg-center" 
-           style={{backgroundImage: "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="hidden lg:flex lg:w-1/2 relative auth-background">
+        <div className="absolute inset-0 bg-opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center px-16 text-white">
           <h1 className="text-5xl font-bold mb-4">Unlock Your Potential</h1>
           <p className="text-lg text-gray-300">
@@ -21,17 +20,17 @@ function SignUpPage() {
       </div>
 
       {/* Right Side - Sign Up Form */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center bg-[#0f1419] px-8 py-12">
-        <div className="w-full max-w-md">
+      <div className="w-full lg:w-1/2 flex items-center justify-center bg-[#0f1419] px-8 py-6 overflow-y-auto">
+        <div className="w-full max-w-md my-auto">
           {/* Icon */}
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-4">
             <svg className="w-12 h-12 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
             </svg>
           </div>
 
           {/* Already have account Link */}
-          <p className="text-center text-sm text-gray-400 mb-4">
+          <p className="text-center text-sm text-gray-400 mb-3">
             Already have an account?{' '}
             <Link to="/" className="text-blue-500 hover:text-blue-400 font-medium">
               Log in
@@ -40,10 +39,10 @@ function SignUpPage() {
 
           {/* Welcome Text */}
           <h2 className="text-3xl font-bold text-white text-center mb-2">Create your account</h2>
-          <p className="text-gray-400 text-center mb-8">Join us and start your fitness journey.</p>
+          <p className="text-gray-400 text-center mb-5">Join us and start your fitness journey.</p>
 
           {/* Tab Buttons */}
-          <div className="flex gap-4 mb-8">
+          <div className="flex gap-4 mb-5">
             <Link to="/" className="flex-1 py-3 px-6 bg-transparent text-gray-400 rounded-lg font-medium hover:bg-[#1a2332] transition text-center">
               Login
             </Link>
@@ -53,7 +52,7 @@ function SignUpPage() {
           </div>
 
           {/* First Name Input */}
-          <div className="mb-6">
+          <div className="mb-4">
             <label className="block text-white text-sm mb-2">First Name</label>
             <input
               type="text"
@@ -63,7 +62,7 @@ function SignUpPage() {
           </div>
 
           {/* Last Name Input */}
-          <div className="mb-6">
+          <div className="mb-4">
             <label className="block text-white text-sm mb-2">Last Name</label>
             <input
               type="text"
@@ -73,7 +72,7 @@ function SignUpPage() {
           </div>
 
           {/* Email Input */}
-          <div className="mb-6">
+          <div className="mb-4">
             <label className="block text-white text-sm mb-2">Email</label>
             <input
               type="email"
@@ -83,7 +82,7 @@ function SignUpPage() {
           </div>
 
           {/* Password Input */}
-          <div className="mb-6">
+          <div className="mb-4">
             <label className="block text-white text-sm mb-2">Password</label>
             <div className="relative">
               <input
@@ -111,7 +110,7 @@ function SignUpPage() {
           </div>
 
           {/* Confirm Password Input */}
-          <div className="mb-6">
+          <div className="mb-5">
             <label className="block text-white text-sm mb-2">Confirm Password</label>
             <div className="relative">
               <input
@@ -139,12 +138,12 @@ function SignUpPage() {
           </div>
 
           {/* Sign Up Button */}
-          <button className="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium mb-6 transition">
+          <button className="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium mb-5 transition">
             Sign Up
           </button>
 
           {/* Divider */}
-          <div className="relative mb-6">
+          <div className="relative mb-5">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-700"></div>
             </div>
