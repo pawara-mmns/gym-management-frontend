@@ -8,9 +8,8 @@ function LoginPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Image and Text */}
-      <div className="hidden lg:flex lg:w-1/2 relative bg-cover bg-center" 
-           style={{backgroundImage: "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"}}>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="hidden lg:flex lg:w-1/2 relative auth-background">
+        <div className="absolute inset-0  bg-opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center px-16 text-white">
           <h1 className="text-5xl font-bold mb-4">Unlock Your Potential</h1>
           <p className="text-lg text-gray-300">
